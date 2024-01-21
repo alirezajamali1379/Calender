@@ -60,7 +60,7 @@ jobs:
           ./gradlew PersianCalendar:dependencies --configuration minApi21ReleaseRuntimeClasspath | grep -e '--- ' > PersianCalendar/runtime-dependencies-report-compose.txt
 
       - name: Add and commit the report
-        uses: EndBug/add-and-commit@db73408897f13b2878d08ac8b3f8e51cd492c8f2
+        uses: EndBug/add-and-commit@2f00a737d8339f2ef526b2e2a56f71e02c044dc6
         with:
           default_author: github_actions
           message: 'Update the runtime dependencies report'
